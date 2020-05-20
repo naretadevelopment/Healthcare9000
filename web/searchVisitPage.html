@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search visit page</title>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+        </div>
+
+
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            </button>
+            <a><input type="button" value="Go back" onclick="history.go(-1)" class="btn btn-primary btn-lg"></a></p>
+
+
+            </form>
+        </div>
+
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Search visits</h1>
+    </div>
+
+</div>
+
+
+<div class="row form-group"></div>
+
+<div class="container-fluid">
+    <br>
+
+
+    <div class="col-sm-4">
+
+
+        <form action="SearchVisitsServlet" method="get">
+
+
+            <legend><h3>Enter visit data:</h3></legend>
+
+
+            <label for="specialty"><h4>Choose specialty:</h4></label>
+
+            <select id="specialty" required name="specialty">
+                <option value="surgeon">surgeon</option>
+                <option value="internist">internist</option>
+                <option value="pediatrician">pediatrician</option>
+                <option value="psychiatrist">psychiatrist</option>
+                <option value="1 of 10 dentist">1 of 10 dentist</option>
+                <option value="ophthalmologist">ophthalmologist</option>
+                <option value="gynecologist">gynecologist</option>
+                <option value="urologist">urologist</option>
+                <option value="orthopaedist">orthopaedist</option>
+                <option value="plastic surgeon">plastic surgeon</option>
+
+            </select>
+
+            <br>
+
+            <label><h4>Date visit:</h4></label>
+            <input type="datetime-local" name="date" required>
+            <br>
+
+            <br>
+
+
+            <label for="place"><h4>Choose clinic:</h4></label>
+
+            <select id="place" required name="place">
+                <option value="Clinic 1">Clinic 1</option>
+                <option value="Clinic 2">Clinic 2</option>
+                <option value="Clinic 3">Clinic 3</option>
+                <option value="Clinic 4">Clinic 4</option>
+                <option value="Clinic 5">Clinic 5</option>
+                <option value="all clinics">all clinics</option>
+
+
+            </select>
+
+            <br>
+            <input type="submit" value="search visits" class="btn btn-primary btn-lg">
+
+
+        </form>
+
+
+    </div>
+
+    <div class="col-sm-4">
+
+
+        <img src="img/two_doctors.jpg">
+
+
+    </div>
+
+</div>
+
+
+<footer>&copy; Healthcare 9000</footer>
+
+</body>
+</html>
